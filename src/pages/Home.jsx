@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import SportTabs from "../components/SportTabs";
 import MainFilters from "../components/MainFilters";
 import MatchList from "../components/MatchList";
+import Footer from "../components/Footer";
 
 export default function Home() {
   // Just a single state for all/favorites/live/finished/upcoming
@@ -14,6 +15,7 @@ export default function Home() {
       <SportTabs />
       <MainFilters activeTab={activeTab} setActiveTab={setActiveTab} />
       <MatchList activeTab={activeTab} />
+      <Footer />
     </>
   );
 }
