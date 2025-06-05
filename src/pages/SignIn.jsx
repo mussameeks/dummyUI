@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { login } from "../utils/auth";
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
@@ -9,8 +10,8 @@ export default function SignIn() {
   const handleSignIn = (e) => {
     e.preventDefault();
     // Mock auth logic: always successful
-    // Replace with your real auth logic
     if (email && password) {
+      login(email);
       navigate("/dashboard");
     }
   };
