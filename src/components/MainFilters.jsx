@@ -16,9 +16,9 @@ export default function MainFilters({ activeTab, setActiveTab }) {
       {tabs.map((tab) => (
         <button
           key={tab}
-          className={\`px-4 py-2 rounded-full font-semibold transition \${activeTab === tab
+          className={`px-4 py-2 rounded-full font-semibold transition ${activeTab === tab
             ? "bg-blue-500 text-white"
-            : "bg-gray-200 text-gray-800"}\`}
+            : "bg-gray-200 text-gray-800"}`}
           onClick={() => setActiveTab(tab)}
         >
           {tabNames[tab]}
